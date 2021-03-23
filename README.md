@@ -25,5 +25,14 @@ You need to have the following installed:
 
 **Steps**
 
-- Make sure Docker Desktop is running.
-- Open up  VS Code. If you already have VS Code open, open a new blank workspacee (`File -> New Window`);
+- Make sure Docker Desktop is running. Assuming you have not used Docker before, you should see something like this:
+![Docker Desktop](docs/docker-desktop.png)
+Note that the background of the whale in the bottom left is green. This means Docker is ready to go.
+
+- Open up  VS Code. If you already have VS Code open, open a new blank workspacee (`File -> New Window`.)
+
+- Click "Clone Repository."
+![Clone From Repo Button](docs/vs-code-clone-repo-1.png)
+
+- Paste the URL of this repo into the box. https://github.com/cdcarson/docker-lamp.git. You'll be asked to choose a parent folder into which the the repo will be cloned.
+![Paste the URL of this repo](docs/vs-code-clone-repo-2.png)
