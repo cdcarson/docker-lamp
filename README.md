@@ -52,6 +52,12 @@ Click "Reopen in Container." If you don't see this prompt, you can always open i
 
 ![Reopen in Container from Command Pallete](docs/img/reopen-in-container-command.png)
 
+VS Code will tell Docker to start the containers...
+
+![Starting the Containers](docs/img/vscode-starting-containers.png)
+
 The first time you run this it will take a significant amount of time (like 5 or 10 minutes) to complete. Docker is downloading and compiling a whole bunch of source code. Don't worry -- the next time it'll only take a few seconds. 
+
+Look at Docker Desktop
 
 
