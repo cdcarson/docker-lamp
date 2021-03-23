@@ -25,19 +25,33 @@ You need to have the following installed:
 
 **Steps**
 
-- Make sure Docker Desktop is running. Assuming you have not used Docker before, you should see something like this:
-![Docker Desktop](docs/docker-desktop.png)
+Make sure Docker Desktop is running. Assuming you have not used Docker before, you should see something like this:
+
+![Docker Desktop](docs/img/docker-desktop.png)
+
 Note that the background of the whale on the bottom left is green. This means Docker is ready to go.
 
-- Open up VS Code. In VS Code, open up Extensions (`View -> Extensions`.) Type "Remote Containers" into the search box. Click on "Remote Containers, then click "Install."
+Open up VS Code. In VS Code, open up Extensions (`View -> Extensions`.) Type "Remote Containers" into the search box. Click on "Remote Containers, then click "Install."
 
-![Installing the Remote Containers Extension](docs/remote-containers-install.png)
+![Installing the Remote Containers Extension](docs/img/remote-containers-install.png)
 
-- If you already have a project open, open a new blank workspace (`File -> New Window`.)
+If you already have a project open, open a new blank workspace (`File -> New Window`.)
 
-- Click "Clone Repository."
-![Clone From Repo Button](docs/vs-code-clone-repo-1.png)
+Click "Clone Repository."
 
-- Paste the URL of this repo into the box. https://github.com/cdcarson/docker-lamp.git. You'll be asked to choose a parent folder into which the the repo will be cloned.
-![Paste the URL of this repo](docs/vs-code-clone-repo-2.png)
+![Clone From Repo Button](docs/img/vs-code-clone-repo-1.png)
+
+Paste the URL of this repo into the box. https://github.com/cdcarson/docker-lamp.git. You'll be asked to choose a parent folder into which the the repo will be cloned.
+![Paste the URL of this repo](docs/img/vs-code-clone-repo-2.png)
+
+You should be prompted to reopen the workspace in a dev container:
+
+![Reopen in Container Prompt](docs/img/reopen-in-container.png)
+
+Click "Reopen in Container." If you don't see this prompt, you can always open in via the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Select "Reopen in Container":
+
+![Reopen in Container from Command Pallete](docs/img/reopen-in-container-command.png)
+
+The first time you run this it will take a significant amount of time (like 5 or 10 minutes) to complete. Docker is downloading and compiling a whole bunch of source code. Don't worry -- the next time it'll only take a few seconds. 
+
 
