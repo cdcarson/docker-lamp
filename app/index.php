@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
     <title>Hello, world!</title>
   </head>
   <body>
@@ -23,7 +22,7 @@
         <li>
           MySQL: 
           <?php
-            $link = mysqli_connect("database", "root", $_ENV['MYSQL_ROOT_PASSWORD'], null);
+            $link = mysqli_connect("database", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], null);
             if (mysqli_connect_errno()) {
                 printf("MySQL connecttion failed: %s", mysqli_connect_error());
             } else {
