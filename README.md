@@ -25,4 +25,5 @@ You need to have the following installed:
 
 **Steps**
 
+- Make sure Docker Desktop is running.
 - Open up  VS Code. If you already have VS Code open, open a new blank workspacee (`File -> New Window`);
