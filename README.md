@@ -27,12 +27,17 @@ You need to have the following installed:
 
 - Make sure Docker Desktop is running. Assuming you have not used Docker before, you should see something like this:
 ![Docker Desktop](docs/docker-desktop.png)
-Note that the background of the whale in the bottom left is green. This means Docker is ready to go.
+Note that the background of the whale on the bottom left is green. This means Docker is ready to go.
 
-- Open up  VS Code. If you already have VS Code open, open a new blank workspacee (`File -> New Window`.)
+- Open up VS Code. In VS Code, open up Extensions (`View -> Extensions`.) Type "Remote Containers" into the search box. Click on "Remote Containers, then click "Install."
+
+![Installing the Remote Containers Extension](docs/remote-containers-install.png)
+
+- If you already have a project open, open a new blank workspace (`File -> New Window`.)
 
 - Click "Clone Repository."
 ![Clone From Repo Button](docs/vs-code-clone-repo-1.png)
 
 - Paste the URL of this repo into the box. https://github.com/cdcarson/docker-lamp.git. You'll be asked to choose a parent folder into which the the repo will be cloned.
 ![Paste the URL of this repo](docs/vs-code-clone-repo-2.png)
+
