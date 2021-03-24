@@ -56,8 +56,29 @@ VS Code will tell Docker to start the containers...
 
 ![Starting the Containers](docs/img/vscode-starting-containers.png)
 
-The first time you run this it will take a significant amount of time (like 5 or 10 minutes) to complete. Docker is downloading and compiling a whole bunch of source code. Don't worry -- the next time it'll only take a few seconds. 
+**Important!** The first time you run this it may take a significant amount of time (like 5 or 10 minutes) to complete. Docker is downloading and compiling a whole bunch of source code. Don't worry -- in future it'll only take a few seconds. 
 
-Look at Docker Desktop
+Look at Docker Desktop. You should see the app running as `docker-lamp_devcontainer`. Expand the app to see the three containers that we've created:
+
+![Docker after starting the containers](docs/img/docker-after-start.png)
+
+There are three containers:
+
+- The PHP app itself. You can open this in your browser at http://localhost:3500/
+- The database.
+- The phpMyAdmin (database admin) app. You can open this in your browser at http://localhost:3501/
+
+## Start Coding!
+
+The repo is set up so that the PHP/Apache container's document root is mapped to the project `/app` directory. Any changes you make to code here will be served by the app. 
+
+When you clone the repo, the `app` container contains only `index.php`. This is  what shows up at http://localhost:3500/. All it does now is display a `Hello world` header and check whether everything is ok with the database connection.  
+
+Edit this file. Try changing all occurrences of `world` to `galaxy` in `index.php, then reload http://localhost:3500/.
+
+To shut down the containers, do "Remote - Containers: Reopen Locally" from the command Palette. (Or just quit VS Code.) Note that any changes you have made while the container is running will be saved.
+
+More TKTK
+
 
 
